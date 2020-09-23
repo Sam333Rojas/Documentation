@@ -1,5 +1,7 @@
 # Understanding Django
 
+![](Django/django-simple.png?raw=true)
+
 ## *Pseudo* defining the parts of Django
 
 ### Models
