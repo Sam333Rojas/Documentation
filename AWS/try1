@@ -1,0 +1,76 @@
+  765  sudo apt-get remove postgresql
+  766  hisotry
+  767  history
+  768  sudo apt-get remove postgresql
+  769  sudo rm -rf /var/lib/postgresql
+  770  sudo rm -rf /etc/postgresql/
+  771  sudo admin -r postgres
+  772  userdel -r postgres
+  773  sudo userdel -r postgres
+  774  postgres kill
+  775  psql kill
+  776  userdel -r postgres
+  777  sudo userdel -r postgres
+  778  sudo su
+  779  sudo userdel -r postgres
+  780  service postgres stop
+  781  sudo service postgres stop
+  782  sudo userdel -r postgres
+  783  service postgresql status
+  784  service postgresql restart
+  785  service postgresql status
+  786  python3 manage.py 
+  787  pip install psycopg2
+  788  pip3 install psycopg2
+  789  python3 pip  install psycopg2
+  790  python3 pip  -m install psycopg2
+  791  pip -m install psycopg2
+  792  sudo pip install psycopg2
+  793  postgres -v
+  794  sudo yum install postgresql92.x86_64-server
+  795  yum install postgresql92.x86_64-server
+  796  sudo apt install postgresql92.x86_64-server
+  797  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+  798  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+  799  sudo apt-get update
+  800  sudo fuser -vki  /var/lib/apt/lock
+  801  sudo fuser -vki  /var/lib/apt/lists
+  802  sudo rm -f /var/lib/apt/lists
+  803  sudo fuser -vki  /var/lib/apt/lists/lock
+  804  sudo rm -f /var/lib/apt/lists/lock
+  805  sudo apt --configure -a
+  806  sudo apt-get autoremove
+  807  sudo apt-get update
+  808  sudo apt install postgresql92.x86_64-server
+  809  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+  810* 
+  811  sudo apt install postgresql92.x86_64-server
+  812  rpm -Uvh http://yum.postgresql.org/9.2/redhat/rhel-6-i386/pgdg-centos92-9.2-6.noarch.rpm
+  813  sudo apt install rpm
+  814  rpm -Uvh http://yum.postgresql.org/9.2/redhat/rhel-6-i386/pgdg-centos92-9.2-6.noarch.rpm
+  815  ashow postgresql
+  816  apt show postgresql
+  817  sudo apt-get install postgresql
+  818  Git/RecipeApp$ sudo apt-get install postgresql
+  819  sudo apt-get install postgresql10
+  820* 
+  821  sudo apt-get install python3-psycopg2
+  822  python3 manage.py runserver
+  823  sudo apt-get install python3-psycopg2
+  824  sudo apt-get install python-psycopg2
+  825  sudo apt-update
+  826  sudo apt-get update
+  827  python3 manage.py runserver
+  828  sudo apt-get install libpq-dev python-dev
+  829  sudo apt-get update
+  830  history
+  831  sudo fuser -vki  /var/lib/apt/lists/lock
+  832  sudo apt-get update
+  833  python3 manage.py runserver
+  834  sudo apt-get install libpq-dev python-dev
+  835  sudo apt-get install libpq-dev python3-dev
+  836  sudo apt-get install libpq-dev python-dev
+  837  pip install psycopg2
+  838  python3 manage.py runserver
+  839  history
+
