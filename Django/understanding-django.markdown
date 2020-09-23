@@ -1,6 +1,6 @@
 # Understanding Django
 
-![](Django/django-simple.png)
+!["image 1"](django-simple.png?raw=true)
 
 ## *Pseudo* defining the parts of Django
 
