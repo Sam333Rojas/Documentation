@@ -1,24 +1,46 @@
 # Understanding Django
 
+**Note:** This guide is a simplification of the most important components for someone that needs to understand and work with django.
+
+**Some Components are much more complex than what is mentioned here and the explanation of its operation needs the definition of others, to know in depth and exactly how django works is recommended to read the documentation in :** https://docs.djangoproject.com/
+
+### Simple approach to interactions between the different parts of Django
+
+
 !["image 1"](django-simple.png?raw=true)
+
+1. Users interact with the web app using the url's:
+    * Through "the common" use of urls as: yourwebsite.com/admin/users
+    * Through urls embebed in buttons:
+```HTML
+    <a href="{% url "item" item_id=item.id %}" class="btn btn-primary">Buy this item</a>
+``` 
+2. When the user call an url django call a function(Views) that defines what the user sees
+3. Views use GET and POST methods to interact with the DataBase:
+    * GET is used to request data from a specified resource.
+    * POST is used to send data to a server to create/update a resource.
+4. Models are the equivalent to tables or entities in Data Bases 
+5. Forms are compoments that prepare and restruct data to upload it to the Data Base
+6. Templates are html templates that use django variables or embebed code to show what the views define.
 
 ## *Pseudo* defining the parts of Django
 
 ### Models
 * To create and manipulate data in your Data Base you usually use *Entities* or *Tables*(SQL) in Django you use models
 * To define a Model you use the class syntaxis and extends the models.Models class 
-* Simple Model example
+*  #### Simple Model example
 ```python
 from django.db import models
 from rest_framework import serializers as ser
 
 
 class TestObject(models.Model):
-	#You have to define TestObject attributes and restrictions
+    #You have to define TestObject attributes and restrictions
     id = models.AutoField(primary_key=True)
     foo = models.DecimalField(decimal_places=120, max_digits=128,null=True)
 ```
-#### Complex Model example
+
+* #### Complex Model example
 ```PYTHON
 from django.contrib.auth.models import User
 from django.db import models
@@ -45,7 +67,7 @@ class YourFirstEntity(models.Model):
 ```
 
 
-### URls
+### URLs
 * When you call www.yourwebsite.com/some_url Django search in the urls.py some function (view) that will respond to your request 
 
 ```PYTHON
@@ -63,14 +85,14 @@ urlpatterns = [
 
 ### Views
 Views are funcitions that take care of the connection between users request and server actions
-* Simple view example:
+* #### Simple view example:
 	* So your user wants to see www.yourdomine.com/hello-world ?
 	* Then... Your function will respond with a Hello World !
 ```PYTHON
 def hello_world(request):
   return HttpResponse('Hello, world!')
 ```
-* Other view example:
+* #### Other view example:
 ```python
 # This function perform tests in a python list with n insertions and deletions
 def python_list_test(request, n):
